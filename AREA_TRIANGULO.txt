@@ -1,0 +1,48 @@
+Algoritmo AreaTriangulo
+    Repetir
+        Limpiar Pantalla
+        Escribir "CALCULA AREA DE TRIANGULOS"
+        Escribir "**************************"
+	    Escribir ""
+        Escribir "1. Conociendo base y altura"
+        Escribir "2. Conociendo la longitud de los 3 lados"
+        Escribir "3. Salir"
+        Escribir "Escoja una opción (1-3): "
+        Leer opciones
+        Segun opciones Hacer
+            1:
+				Escribir "Ingrese la base"
+				leer base
+				Escribir "Ingrese la altura"
+				leer altura
+				area <- (base * altura) / 2
+				Escribir "El área del triángulo es: ",area 
+				Escribir "Presione enter para continuar"
+				Esperar Tecla
+            2:
+				Escribir "Introduzca el lado 1: ";
+				Leer lado;
+				Escribir "Introduzca el lado 2: ";
+				Leer lado2;
+				Escribir "Introduzca el lado 3: ";
+				Leer lado3;
+				s <- lado + lado2 + lado3;
+				s <- s / 2;
+				area <- s*(s-lado)*(s-lado2)*(s-lado3);
+				Si area >0 Entonces  // aqui comprobamos que el area no sea negativa
+					area <- raiz (area);
+					Escribir "El area del triangulo es: ", area;
+					Escribir "Presione enter para continuar"
+					Esperar Tecla
+				SiNo
+					Escribir "¡Tal triángulo no existe!"
+					Escribir "Presione enter para continuar"
+					Esperar Tecla
+				Fin Si
+            3:
+                Escribir "¡Gracias y hasta pronto!"
+            De otro modo:
+                Limpiar Pantalla
+        FinSegun
+	Hasta Que opciones=3
+FinAlgoritmo
