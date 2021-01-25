@@ -1,7 +1,7 @@
 Algoritmo AreaTriangulo
     Repetir
         Limpiar Pantalla
-        Escribir "CALCULA AREA DE TRIANGULOS"
+        Escribir "CALCULA AREA DE TRIANGULOS 2"
         Escribir "**************************"
 	    Escribir ""
         Escribir "1. Conociendo base y altura"
